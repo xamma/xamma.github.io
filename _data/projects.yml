@@ -1,0 +1,49 @@
+# > name: Name of your project
+# > descr: Description of your project
+# > demo: Link to your project
+# > tags: List of technologies you used in your projects
+#
+# Example of a project
+# - name: project X
+#   descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+#   demo: https://example.com/
+#   tags:
+#     - tag: MongoDB
+#     - tag: Express
+#     - tag: AngularJS
+#     - tag: Node
+
+- name: CSP-Automation
+  descr: "Automation project for a Cloud Service Provider that gathers contracts and invoices of all customers for automated controlling and billing process. Built in a cloud-native and containerized Microservice Architecture."
+  tags:
+    - tag: Python
+    - tag: Kubernetes
+    - tag: Microservice
+    - tag: Docker
+
+- name: Replacify
+  descr: "GUI Application deployed as Executable, that puts together data from multiple excel-files and consolidates them in one customer-friendly file."
+  tags:
+    - tag: Python
+    - tag: Qt
+    - tag: Microservice
+
+- name: Fullstack-Ecommerce-Plattform
+  descr: "Fullstack E-Commerce Shop, including User- and Productmanagement on Database, Backend API, Single-Page-Application Frontend. This also includes Containerization, CI/CD and a complete Kubernetes Stack."
+  tags:
+    - tag: Python
+    - tag: React
+    - tag: Microservices
+    - tag: Kubernetes
+    - tag: CI/CD
+    - tag: Containerization
+    - tag: MongoDB
+
+- name: Serverless-ShopBackend
+  descr: "Serverless approach of an Backend for an E-Shop. Uses AWS DynamoDB as serverless Database, AWS Lambda functions for the API-routes and AWS API Gateway as internet facing endpoint."
+  tags:
+    - tag: Serverless
+    - tag: Python
+    - tag: Microservices
+    - tag: AWS
+    - tag: Software ARchitecture

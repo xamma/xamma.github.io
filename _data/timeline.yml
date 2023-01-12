@@ -1,0 +1,76 @@
+# > title: Name of your timeline entry, university or work place
+# > title-url: Link to your timeline entry, university or work place
+# > date: Time span
+# > subtitle: The description under the title
+# > tags: List of tags you want to associate with the entry
+# > timeline-side: The side on which you want to display the entry: left or right
+
+# Example of a timeline entry
+# - title: airbnb
+#   title-url: https://example.com/
+#   date: Sep 2019 - Present
+#   subtitle: Fullstack Developer
+#   tags:
+#     - tag: React
+#     - tag: Javascript
+#     - tag: Ruby
+#     - tag: Rails
+#   timeline-side: right
+
+- title: Bechtle
+  title-url: https://www.bechtle.com/
+  date: Mar 2022 - Present
+  subtitle: Cloud Solution Architect
+  tags:
+    - tag: React
+    - tag: Javascript
+    - tag: Python
+    - tag: DevOps
+    - tag: Software Architecture
+  timeline-side: right
+
+- title: alfatraining
+  title-url: https://www.alfatraining.de/
+  date: Nov 2021 - Feb 2022
+  subtitle: C++/Qt-Developer
+  tags:
+    - tag: Qt
+    - tag: C++
+    - tag: Object-Oriented-Programming (OOP)
+  timeline-side: left
+
+- title: BÖLLINGER GROUP
+  title-url: https://www.boellinger-group.com/
+  date: Oct 2020 - Oct 2021
+  subtitle: Project engineer
+  tags:
+    - tag: CodeSys
+    - tag: 3D-Printing
+    - tag: 3D-Modelling
+  timeline-side: right
+
+- title: AUDI
+  title-url: https://www.audi.de/
+  date: Feb 2019 - Aug 2019
+  subtitle: Process engineer
+  tags:
+    - tag: Welding
+    - tag: Robotics
+    - tag: Production
+  timeline-side: right
+
+- title: Techn. Hochschule Heilbronn HHN
+  title-url: https://www.hs-heilbronn.de/de
+  date: 2016 - 2021
+  subtitle: Bachelor of Engineering
+  timeline-side: left
+
+- title: ILLIG Maschinenbau
+  title-url: https://www.illig.de/
+  date: Sep 2011 - Mar 2015
+  subtitle: electronics engineer for industrial engineering
+  tags:
+    - tag: Automation
+    - tag: SPS
+    - tag: PLC
+  timeline-side: right
