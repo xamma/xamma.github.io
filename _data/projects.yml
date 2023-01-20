@@ -20,6 +20,8 @@
     - tag: Kubernetes
     - tag: Microservice
     - tag: Docker
+    - tag: Automation
+    - tag: DevOps
 
 - name: Replacify
   descr: "GUI Application deployed as Executable, that puts together data from multiple excel-files and consolidates them in one customer-friendly file."
@@ -27,6 +29,8 @@
     - tag: Python
     - tag: Qt
     - tag: Microservice
+    - tag: Automation
+    - tag: DevOps
 
 - name: Fullstack-Ecommerce-Plattform
   descr: "Fullstack E-Commerce Shop, including User- and Productmanagement on Database, Backend API, Single-Page-Application Frontend. This also includes Containerization, CI/CD and a complete Kubernetes Stack."
@@ -39,11 +43,12 @@
     - tag: Containerization
     - tag: MongoDB
 
-- name: Serverless-ShopBackend
-  descr: "Serverless approach of an Backend for an E-Shop. Uses AWS DynamoDB as serverless Database, AWS Lambda functions for the API-routes and AWS API Gateway as internet facing endpoint."
+- name: Serverless-EShop-Backend
+  descr: "Serverless approach of an Backend for an E-Shop. Uses AWS DynamoDB as serverless Database, AWS Lambda functions for the API-routes and AWS API Gateway as internet facing endpoint. Developed with AWS Chalice, a Python-Framework for serverless API's."
   tags:
     - tag: Serverless
     - tag: Python
+    - tag: Chalice
     - tag: Microservices
     - tag: AWS
-    - tag: Software ARchitecture
+    - tag: Software Architecture
