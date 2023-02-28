@@ -52,3 +52,12 @@
     - tag: Microservices
     - tag: AWS
     - tag: Software Architecture
+
+- name: Desktop-App for Girl's Day
+  descr: "GUI Application for image branding. Made for the official Girl's Day @ Bechtle. It lets the attendees create personalized and customized memories of their day at the company."
+  tags:
+    - tag: CI/CD
+    - tag: Python
+    - tag: Qt
+    - tag: Portable
+    - tag: Microservice
