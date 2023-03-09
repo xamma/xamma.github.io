@@ -103,8 +103,9 @@ projects:
     forks: true
     # projects: A list of the repository names you want to exclude from the listing.
     projects:
-    # - repo1-to-be-excluded
-    # - repo2-to-be-excluded
+    - java-rockpaperscissor
+    - python-rockpaperscissor
+    - java-APICall
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
