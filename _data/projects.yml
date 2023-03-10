@@ -18,7 +18,7 @@
   tags:
     - tag: Python
     - tag: Kubernetes
-    - tag: Microservice
+    - tag: Microservices
     - tag: Docker
     - tag: Automation
     - tag: DevOps
@@ -28,7 +28,7 @@
   tags:
     - tag: Python
     - tag: Qt
-    - tag: Microservice
+    - tag: Microservices
     - tag: Automation
     - tag: DevOps
 
@@ -60,4 +60,13 @@
     - tag: Python
     - tag: Qt
     - tag: Portable
-    - tag: Microservice
+    - tag: Microservices
+
+- name: Github monitor
+  descr: "A containerized Microservice running on K8s that monitors changes in your Github-Repos and notifies your Discord Channel with detailed information."
+  tags:
+    - tag: Kubernetes
+    - tag: Python
+    - tag: Microservices
+    - tag: CI/CD
+    - tag: Monitoring
