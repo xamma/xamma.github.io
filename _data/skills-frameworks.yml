@@ -21,10 +21,10 @@
   weight: 3
 
 - name: Chalice
-  weight: 2
+  weight: 3
 
 - name: Spring
-  weight: 3
+  weight: 2
 
 - name: Qt
   weight: 3

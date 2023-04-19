@@ -15,7 +15,7 @@
   weight: 4
 
 - name: CI/CD
-  weight: 3
+  weight: 4
 
 - name: Terraform
   weight: 3
@@ -33,4 +33,10 @@
   weight: 5
 
 - name: Postman
+  weight: 4
+
+- name: Jenkins
+  weight: 3
+
+- name: CloudFormation
   weight: 4
