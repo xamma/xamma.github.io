@@ -1,0 +1,14 @@
+name: Rebuild GH Pages Site
+
+on:
+  # rebuild every sunday at midnight UTC
+  schedule:
+   - cron: '0 0 * * 0'
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      uses: wei/curl@master
+      with:
+        args: "-X POST -H 'Authorization: token ${{ secrets.MY_PAGES_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/xamma/xamma.github.io/pages/builds"
