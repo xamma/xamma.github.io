@@ -23,9 +23,6 @@
 - name: Ansible
   weight: 3
 
-- name: npm
-  weight: 3
-
 - name: Kubernetes
   weight: 4
 
@@ -40,3 +37,12 @@
 
 - name: CloudFormation
   weight: 4
+
+- name: ArgoCD
+  weight: 3
+
+- name: Pandas
+  weight: 4
+
+- name: cloud-native
+  weight: 5
