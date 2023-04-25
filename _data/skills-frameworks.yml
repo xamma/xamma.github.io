@@ -28,3 +28,6 @@
 
 - name: Qt
   weight: 3
+
+- name: Vue.js
+  weight: 3
