@@ -46,3 +46,9 @@
 
 - name: cloud-native
   weight: 5
+
+- name: Velero (Heptio Ark)
+  weight: 3
+
+- name: Pulumi
+  weight: 3

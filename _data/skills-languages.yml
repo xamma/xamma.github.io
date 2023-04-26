@@ -34,3 +34,9 @@
 
 - name: C++
   weight: 4
+
+- name: HCL
+  weight: 3
+
+- name: YAML
+  weight: 4
