@@ -34,7 +34,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: Hi i'm Max, passionate about everything with Computers, programming and building Applications. I once was an Engineer in the automotive sector and transitioned into software engineering ;)
+about_me_description: Hi i'm Max, passionate about everything with Computers, programming and building Applications. I once was an Engineer in the automotive sector and transitioned into software engineering ;) I'm especially focused on the AWS cloud, where I hold several certifications as Solutions Architect, Developer and DevOps Engineer Professional.
 
 # SKILLS SECTION
 # show_skills_card:
