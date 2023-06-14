@@ -106,6 +106,9 @@ projects:
     - java-rockpaperscissor
     - python-rockpaperscissor
     - java-APICall
+    - uNStuck
+    - hyperv-natswitch
+    - docker_envarg
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics

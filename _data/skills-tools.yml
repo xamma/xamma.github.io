@@ -8,9 +8,6 @@
 - name: Git
   weight: 5
 
-- name: Bash
-  weight: 4
-
 - name: DevOps
   weight: 4
 
@@ -18,7 +15,7 @@
   weight: 4
 
 - name: Terraform
-  weight: 3
+  weight: 4
 
 - name: Ansible
   weight: 3
@@ -38,17 +35,11 @@
 - name: CloudFormation
   weight: 4
 
-- name: ArgoCD
+- name: Flux/ArgoCD
   weight: 3
 
 - name: Pandas
   weight: 4
-
-- name: cloud-native
-  weight: 5
-
-- name: Velero (Heptio Ark)
-  weight: 3
 
 - name: Pulumi
   weight: 3
