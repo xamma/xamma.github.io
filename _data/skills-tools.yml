@@ -42,4 +42,7 @@
   weight: 4
 
 - name: Pulumi
-  weight: 3
+  weight: 2
+
+- name: Helm
+  weight: 4
