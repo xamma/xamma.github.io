@@ -8,9 +8,6 @@
 - name: Git
   weight: 5
 
-- name: DevOps
-  weight: 4
-
 - name: CI/CD
   weight: 4
 
