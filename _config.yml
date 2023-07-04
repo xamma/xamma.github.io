@@ -109,6 +109,7 @@ projects:
     - uNStuck
     - hyperv-natswitch
     - docker_envarg
+    - xamma
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
