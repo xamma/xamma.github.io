@@ -32,8 +32,8 @@
 - name: CloudFormation
   weight: 4
 
-- name: Flux/ArgoCD
-  weight: 3
+- name: Flux/ArgoCD/GH Actions
+  weight: 4
 
 - name: Pandas
   weight: 4

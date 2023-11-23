@@ -31,3 +31,6 @@
 
 - name: Vue.js
   weight: 3
+
+- name: ITIL4
+  weight: 4

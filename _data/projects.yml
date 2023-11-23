@@ -70,3 +70,12 @@
     - tag: Microservices
     - tag: CI/CD
     - tag: Monitoring
+
+- name: Managed Service for Nextcloud
+  descr: "Developing a service for running Nextcloud with all needed components on Kubernetes. This includes a fully functional app suite, per customer encapsulation, domain and DNS config as well as a CI/CD pipeline."
+  tags:
+    - tag: Kubernetes
+    - tag: Nextcloud
+    - tag: Virtualization
+    - tag: CI/CD
+    - tag: DevOps

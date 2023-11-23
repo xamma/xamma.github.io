@@ -14,10 +14,7 @@
 - name: Python
   weight: 4
 
-- name: HTML5
-  weight: 3
-
-- name: CSS3
+- name: HTML;)
   weight: 3
 
 - name: Java
@@ -26,7 +23,7 @@
 - name: Ruby
   weight: 1
 
-- name: Golang
+- name: Go
   weight: 3
 
 - name: Kotlin
