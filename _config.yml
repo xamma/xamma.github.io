@@ -14,7 +14,7 @@ baseurl: ""
 username: Max Bickel
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: DevOps & Cloud Engineer
+typing_text: Cloud Solution Architect
 # email: Your E-Mail address for the email button.
 email: max@xammaops.win
 # For every social button you want to display, set your username or userid
