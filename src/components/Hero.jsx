@@ -1,25 +1,26 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import bgHero from '../assets/bg-hero.jpg';
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 to-blue-400 text-white" id="hero">
-      <motion.h1 className="text-5xl font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        Hi, I’m John Doe
-      </motion.h1>
-      <p className="mt-4 text-xl">Full Stack Developer</p>
-      <div className="flex space-x-6 mt-6 text-2xl">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </a>
-        <a href="mailto:your@email.com">
-          <FaEnvelope />
-        </a>
+    <motion.section
+      id="hero"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${bgHero})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      {/* Content */}
+      <div className="relative z-10 text-white text-center px-6 max-w-4xl">
+        <h1 className="text-6xl font-extrabold mb-4">Hey, I’m [Your Name]</h1>
+        <p className="text-xl">I build polished web experiences with React and Tailwind CSS.</p>
+        {/* Add your icons and links here as needed */}
       </div>
-    </section>
+    </motion.section>
   );
 }
