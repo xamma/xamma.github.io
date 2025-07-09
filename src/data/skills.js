@@ -1,12 +1,16 @@
 export default [
-  'JavaScript',
+  'Python',
   'React',
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'SQL',
-  'Tailwind CSS',
+  'Javascript',
+  'Terraform',
+  'Ansible',
+  'Kubernetes',
+  'Github',
   'Docker',
-  'Git',
-  'TypeScript'
+  'Go',
+  'ArgoCD',
+  'FluxCD',
+  'Huggingface',
+  'NoSQL DBs',
+  'SQL DBs'
 ];

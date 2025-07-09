@@ -24,7 +24,7 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-70 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         <div className="text-2xl font-bold cursor-pointer" onClick={() => handleClick('hero')}>
-          YourName
+          Xamma
         </div>
 
         {/* Desktop menu */}

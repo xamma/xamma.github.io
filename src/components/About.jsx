@@ -6,7 +6,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-6">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          I'm a passionate developer with experience in full stack development. I love creating elegant solutions and clean user experiences. Outside work, I enjoy open source, coffee, and hiking.
+          I'm passionate about everything with Computers, programming and building modern applications. I once was an engineer in the automotive sector and transitioned into cloudnative software engineering. I can build on every cloud and hold several professional and expert level certifications for them. 
         </p>
       </div>
     </section>

@@ -50,21 +50,21 @@ export default function Hero() {
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 drop-shadow-lg">
-          Hey, I’m <span className="text-amber-400">[Your Name]</span>
+          Hey, I’m <span className="text-amber-400">Max Bickel</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-100 drop-shadow-sm mb-6">
-          I build polished web experiences with React and Tailwind CSS.
+          I am a cloud solution architect and DevOps advocate.
         </p>
 
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 text-2xl mb-8">
-          <a href="https://github.com/your-username" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
+          <a href="https://github.com/xamma" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
+          <a href="https://linkedin.com/in/maxbickel" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
             <FaLinkedin />
           </a>
-          <a href="mailto:you@example.com" className="hover:text-blue-400 transition">
+          <a href="mailto:max@xammaops.win" className="hover:text-blue-400 transition">
             <FaEnvelope />
           </a>
         </div>
