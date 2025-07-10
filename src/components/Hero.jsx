@@ -53,7 +53,7 @@ export default function Hero() {
           Hey, I’m <span className="text-amber-400">Max Bickel</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-100 drop-shadow-sm mb-6">
-          I am a cloud solution architect and DevOps advocate.
+          Cloud solution architect and DevOps advocate.
         </p>
 
         {/* Social Icons */}
