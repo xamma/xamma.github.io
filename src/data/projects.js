@@ -20,8 +20,8 @@ export default [
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
-    name: 'AI enhanced notification service',
-    description: 'Service creation for enrichening data from an API stream and more to give customers an enhanced experience based on their environment.',
+    name: 'Ai interfaces and services',
+    description: 'Development of custom AI solutions including AI data enrichening, RAG, backend functionality and RestAPIs for running own models and inferencing.',
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
@@ -29,4 +29,5 @@ export default [
     description: 'Fullstack-App for interacting with data from and to S3 storage via RestAPI and SPA. Written in Microservice-Architecture & running on K8s.',
     link: 'https://github.com/xamma/KubeS3'
   }
+
 ];
