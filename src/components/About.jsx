@@ -8,6 +8,7 @@ import azureArchitect from '../assets/azure-solutions-architect-expert.png';
 import ckad from '../assets/ckad.png';
 import itil4 from '../assets/itil4.png';
 import finops from '../assets/finops-certified-engineer.png';
+import ghactions from '../assets/github-actions.png';
 
 export default function About() {
   const certificationIcons = [
@@ -18,7 +19,8 @@ export default function About() {
     azureArchitect,
     ckad,
     itil4,
-    finops
+    finops,
+    ghactions
   ];
 
   return (
