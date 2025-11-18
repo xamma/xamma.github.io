@@ -28,5 +28,9 @@ export default [
     name: 'KubeS3',
     description: 'Fullstack-App for interacting with data from and to S3 storage via RestAPI and SPA. Written in Microservice-Architecture & running on K8s.',
     link: 'https://github.com/xamma/KubeS3'
+  },
+  {
+    name: 'Cloud automation suite',
+    description: 'Fullstack-App for CSPs containing a ReactJS frontend and a flask backend + PostgreSQL for several automation tasks like invoicing, user management and  report generation.',
   }
 ];
