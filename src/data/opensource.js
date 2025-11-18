@@ -33,5 +33,15 @@ export default [
     name: 'kotlin-restapi-pokedex',
     description: 'Sample project for an Rest-API to perform CRUD-Operations on a MongoDB.',
     link: 'https://github.com/xamma/kotlin-restapi-pokedex'
+  },
+  {
+    name: 'Passphoria',
+    description: 'WebApp implementation of diceware.',
+    link: 'https://github.com/xamma/passphoria'
+  },
+  {
+    name: 'Tabula',
+    description: 'A beautiful csv-viewer webapp written with Next.js.',
+    link: 'https://github.com/xamma/tabula'
   }
 ];

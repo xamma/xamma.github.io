@@ -20,8 +20,8 @@ export default [
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
-    name: 'AI enhanced notification service',
-    description: 'Service creation for enrichening data from an API stream and more to give customers an enhanced experience based on their environment.',
+    name: 'Ai interfaces and services',
+    description: 'Development of custom AI solutions including AI data enrichening, RAG, backend functionality and RestAPIs for running own models and inferencing.',
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
@@ -33,4 +33,5 @@ export default [
     name: 'Cloud automation suite',
     description: 'Fullstack-App for CSPs containing a ReactJS frontend and a flask backend + PostgreSQL for several automation tasks like invoicing, user management and  report generation.',
   }
+
 ];
