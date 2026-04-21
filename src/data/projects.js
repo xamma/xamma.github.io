@@ -15,12 +15,27 @@ export default [
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
-    name: 'K8ccess kubernetes controller',
-    description: 'Writing a kubernetes controller that lets you handle access to your clusters via custom resources for external actors.',
+    name: 'Managed Services production platform',
+    description: 'Building the production platform for running managed services on scale. Including a set of custom tools and controllers to gain GitOps and DevOps excellence.',
     // link: 'https://github.com/yourusername/task-tracker'
   },
   {
-    name: 'Ai interfaces and services',
+    name: 'K8ccess kubernetes controller',
+    description: 'A Kubernetes operator that lets you handle access to your clusters via custom resources for external actors.',
+    // link: 'https://github.com/yourusername/task-tracker'
+  },
+  {
+    name: 'Gloss Kubernetes controller',
+    description: 'Kubernetes controller for creating globally synced secrets across a cluster.',
+    // link: 'https://github.com/yourusername/task-tracker'
+  },
+  {
+    name: 'Hibear kubernetes controller',
+    description: 'Kubernetes controller for implementing hibernation functionality for deployments based on business hours.',
+    // link: 'https://github.com/yourusername/task-tracker'
+  },
+  {
+    name: 'AI interfaces and services',
     description: 'Development of custom AI solutions including AI data enrichening, RAG, backend functionality and RestAPIs for running own models and inferencing.',
     // link: 'https://github.com/yourusername/task-tracker'
   },
