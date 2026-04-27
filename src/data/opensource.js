@@ -43,5 +43,10 @@ export default [
     name: 'Tabula',
     description: 'A beautiful csv-viewer webapp written with Next.js.',
     link: 'https://github.com/xamma/tabula'
+  },
+  {
+    name: 'Replicat',
+    description: 'A CLI tool for creating backups of your Github Repos locally, s3, mirrored or zipped.',
+    link: 'https://github.com/xamma'
   }
 ];
