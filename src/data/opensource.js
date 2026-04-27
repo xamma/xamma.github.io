@@ -45,6 +45,11 @@ export default [
     link: 'https://github.com/xamma/tabula'
   },
   {
+    name: 'Pokescale',
+    description: 'A cloudnative webapp for learning DevOps and Software Engineering.',
+    link: 'https://github.com/xamma/pokescale'
+  },
+  {
     name: 'Replicat',
     description: 'A CLI tool for creating backups of your Github Repos locally, s3, mirrored or zipped.',
     link: 'https://github.com/xamma'
