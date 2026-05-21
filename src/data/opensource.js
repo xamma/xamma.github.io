@@ -53,5 +53,10 @@ export default [
     name: 'Replicat',
     description: 'A CLI tool for creating backups of your Github Repos locally, s3, mirrored or zipped.',
     link: 'https://github.com/xamma'
+  },
+  {
+    name: 'Structly',
+    description: 'Small API for creating JSON schemas from YAML (json-schema.org/draft-07/schema#).',
+    link: 'https://github.com/xamma'
   }
 ];
