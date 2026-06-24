@@ -4,11 +4,12 @@ import awsArchitect from '../assets/aws-certified-solutions-architect-associate.
 import awsDeveloper from '../assets/aws-certified-developer-associate.png';
 import awsDevOps from '../assets/aws-certified-devops-engineer-professional.png';
 import azureAdmin from '../assets/azure-administrator-associate.png';
+import azureAiEngineer from '../assets/azure-ai-engineer.png';
 import azureArchitect from '../assets/azure-solutions-architect-expert.png';
 import ckad from '../assets/ckad.png';
+import ghactions from '../assets/github-actions.png';
 import itil4 from '../assets/itil4.png';
 import finops from '../assets/finops-certified-engineer.png';
-import ghactions from '../assets/github-actions.png';
 
 export default function About() {
   const certificationIcons = [
@@ -16,11 +17,12 @@ export default function About() {
     awsDeveloper,
     awsDevOps,
     azureAdmin,
+    azureAiEngineer,
     azureArchitect,
     ckad,
+    ghactions,
     itil4,
-    finops,
-    ghactions
+    finops
   ];
 
   return (
