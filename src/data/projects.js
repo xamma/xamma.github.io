@@ -1,52 +1,83 @@
-export default [
+/**
+ * `category` drives the filter chips in the Projects section — keep the values
+ * in sync with `projectCategories` below. `featured` entries render wide.
+ */
+export const projectCategories = ['All', 'Platform', 'Kubernetes', 'Fullstack', 'AI'];
+
+const projects = [
   {
-    name: 'CSP automation',
-    description: 'Automation project for a Cloud Service Provider that gathers contracts and invoices of all customers for automated controlling and billing process. Built in a cloud-native and containerized Microservice Architecture.',
-    // link: 'https://github.com/yourusername/portfolio'
+    name: 'Managed Kubernetes Service',
+    category: 'Platform',
+    featured: true,
+    description:
+      'Building a fully automated and sovereign Kubernetes managed service. Provisioning of clusters via GitOps, creating a customer facing API with OAuth2 to manage the clusters and several automation workflows.',
+    tags: ['Kubernetes', 'GitOps', 'OAuth2', 'REST API', 'Automation'],
+  },
+  {
+    name: 'Managed Services Production Platform',
+    category: 'Platform',
+    featured: true,
+    description:
+      'Building the production platform for running managed services at scale. Including a set of custom tools and controllers to gain GitOps and DevOps excellence.',
+    tags: ['Platform Engineering', 'Controllers', 'GitOps', 'Scale'],
+  },
+  {
+    name: 'CSP Automation',
+    category: 'Platform',
+    description:
+      'Automation project for a Cloud Service Provider that gathers contracts and invoices of all customers for automated controlling and billing processes. Built in a cloud-native and containerized microservice architecture.',
+    tags: ['Microservices', 'Containers', 'Billing', 'FinOps'],
   },
   {
     name: 'Managed Service for Nextcloud',
-    description: 'Developing a service for running Nextcloud with all needed components on Kubernetes. This includes a fully functional app suite, per customer encapsulation, domain and DNS config as well as a CI/CD pipeline.',
-    // link: 'https://github.com/yourusername/task-tracker'
+    category: 'Platform',
+    description:
+      'Developing a service for running Nextcloud with all needed components on Kubernetes. This includes a fully functional app suite, per-customer encapsulation, domain and DNS config as well as a CI/CD pipeline.',
+    tags: ['Kubernetes', 'Multi-Tenancy', 'DNS', 'CI/CD'],
   },
   {
-    name: 'Managed Kubernetes service',
-    description: 'Building a fully automated and sovereign Kubernetes managed service. Provisioning of clusters via GitOps, creating a customer facing API with OAuth2 to manage the clusters and several automation workflows.',
-    // link: 'https://github.com/yourusername/task-tracker'
+    name: 'K8ccess',
+    category: 'Kubernetes',
+    description:
+      'A Kubernetes operator that lets you handle access to your clusters via custom resources for external actors.',
+    tags: ['Operator', 'RBAC', 'CRD', 'Go'],
   },
   {
-    name: 'Managed Services production platform',
-    description: 'Building the production platform for running managed services on scale. Including a set of custom tools and controllers to gain GitOps and DevOps excellence.',
-    // link: 'https://github.com/yourusername/task-tracker'
+    name: 'Gloss',
+    category: 'Kubernetes',
+    description:
+      'Kubernetes controller for creating globally synced secrets across a cluster.',
+    tags: ['Controller', 'Secrets', 'CRD', 'Go'],
   },
   {
-    name: 'K8ccess kubernetes controller',
-    description: 'A Kubernetes operator that lets you handle access to your clusters via custom resources for external actors.',
-    // link: 'https://github.com/yourusername/task-tracker'
+    name: 'Hibear',
+    category: 'Kubernetes',
+    description:
+      'Kubernetes controller for implementing hibernation functionality for deployments based on business hours.',
+    tags: ['Controller', 'Cost Saving', 'Scheduling', 'Go'],
   },
   {
-    name: 'Gloss Kubernetes controller',
-    description: 'Kubernetes controller for creating globally synced secrets across a cluster.',
-    // link: 'https://github.com/yourusername/task-tracker'
-  },
-  {
-    name: 'Hibear kubernetes controller',
-    description: 'Kubernetes controller for implementing hibernation functionality for deployments based on business hours.',
-    // link: 'https://github.com/yourusername/task-tracker'
-  },
-  {
-    name: 'AI interfaces and services',
-    description: 'Development of custom AI solutions including AI data enrichening, RAG, backend functionality and RestAPIs for running own models and inferencing.',
-    // link: 'https://github.com/yourusername/task-tracker'
+    name: 'AI Interfaces & Services',
+    category: 'AI',
+    description:
+      'Development of custom AI solutions including AI data enrichment, RAG, backend functionality and REST APIs for running own models and inferencing.',
+    tags: ['RAG', 'Inference', 'REST API', 'Python'],
   },
   {
     name: 'KubeS3',
-    description: 'Fullstack-App for interacting with data from and to S3 storage via RestAPI and SPA. Written in Microservice-Architecture & running on K8s.',
-    link: 'https://github.com/xamma/KubeS3'
+    category: 'Fullstack',
+    description:
+      'Fullstack app for moving data to and from S3 storage via REST API and SPA. Written in microservice architecture and running on Kubernetes.',
+    tags: ['S3', 'Microservices', 'Kubernetes', 'SPA'],
+    link: 'https://github.com/xamma/KubeS3',
   },
   {
-    name: 'Cloud automation suite',
-    description: 'Fullstack-App for CSPs containing a ReactJS frontend and a flask backend + PostgreSQL for several automation tasks like invoicing, user management and  report generation.',
-  }
-
+    name: 'Cloud Automation Suite',
+    category: 'Fullstack',
+    description:
+      'Fullstack app for CSPs containing a React frontend and a Flask backend with PostgreSQL for automation tasks like invoicing, user management and report generation.',
+    tags: ['React', 'Flask', 'PostgreSQL', 'Automation'],
+  },
 ];
+
+export default projects;

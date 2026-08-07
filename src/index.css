@@ -2,10 +2,208 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-gray-800;
+/* ---------------------------------------------------------------------------
+   Design tokens. Every color in the app resolves through these, so light and
+   dark are the same components with a different palette.
+--------------------------------------------------------------------------- */
+@layer base {
+  :root {
+    --c-bg: 250 250 249;
+    --c-bg-subtle: 245 245 244;
+    --c-surface: 255 255 255;
+    --c-surface-2: 250 250 249;
+    --c-line: 231 229 228;
+    --c-line-strong: 214 211 209;
+    --c-ink: 24 24 27;
+    --c-muted: 82 82 91;
+    --c-faint: 122 122 132;
+    --c-accent: 202 106 6;
+    --c-accent-soft: 254 243 199;
+    --c-cyan: 8 133 165;
+
+    --grid-line: 0 0 0 / 0.045;
+    --shade: 0 0 0;
+    color-scheme: light;
+  }
+
+  .dark {
+    --c-bg: 8 9 12;
+    --c-bg-subtle: 12 14 18;
+    --c-surface: 19 21 26;
+    --c-surface-2: 25 28 34;
+    --c-line: 38 41 49;
+    --c-line-strong: 56 60 71;
+    --c-ink: 244 244 245;
+    --c-muted: 163 163 173;
+    --c-faint: 115 115 125;
+    --c-accent: 251 191 36;
+    --c-accent-soft: 61 42 8;
+    --c-cyan: 34 211 238;
+
+    --grid-line: 255 255 255 / 0.05;
+    --shade: 255 255 255;
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Keeps anchored sections clear of the fixed header. */
+    scroll-padding-top: 5.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: rgb(var(--c-accent) / 0.28);
+    color: rgb(var(--c-ink));
+  }
+
+  /* One consistent focus treatment for keyboard users, never for mouse. */
+  :focus-visible {
+    outline: 2px solid rgb(var(--c-accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply text-balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+
+  /* Scrollbar, themed to match the surface it sits on. */
+  * {
+    scrollbar-color: rgb(var(--c-line-strong)) transparent;
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--c-line-strong));
+    border: 3px solid transparent;
+    border-radius: 9999px;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--c-faint));
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  /* Small uppercase label that introduces a section or a group. */
+  .kicker {
+    @apply font-mono text-2xs uppercase tracking-kicker text-accent;
+  }
+
+  /* Hairline divider that reads as a hardware seam rather than a border. */
+  .seam {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgb(var(--c-line-strong)) 20%,
+      rgb(var(--c-line-strong)) 80%,
+      transparent
+    );
+    height: 1px;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium
+           transition duration-300 ease-smooth select-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink px-5 py-2.5 text-bg hover:opacity-90 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply btn border border-line-strong px-5 py-2.5 text-ink
+           hover:border-accent hover:text-accent active:scale-[0.98];
+  }
+
+  /*
+   * Skill pill. The icon stays neutral until hover, then picks up the vendor
+   * brand color passed in as --brand — one rule for every skill instead of a
+   * generated class per logo.
+   */
+  .skill-chip svg {
+    color: rgb(var(--c-faint));
+    transition: color 0.3s ease;
+  }
+
+  .skill-chip:hover svg {
+    color: var(--brand, rgb(var(--c-accent)));
+  }
+
+  /* Chip for tech tags. Monospace on purpose — it reads as a machine value. */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-md border border-line bg-surface-2
+           px-2 py-0.5 font-mono text-2xs text-muted;
+  }
+}
+
+@layer utilities {
+  /* Blueprint grid, sized to the 8pt rhythm of the layout. */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(var(--grid-line)) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--grid-line)) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-dots {
+    background-image: radial-gradient(rgb(var(--grid-line)) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  /* Cursor-tracked highlight. Components set --mx/--my on mousemove. */
+  .spotlight::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    background: radial-gradient(
+      340px circle at var(--mx, 50%) var(--my, 50%),
+      rgb(var(--c-accent) / 0.14),
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+}
+
+/* Respect the OS setting: keep the layout, drop the motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

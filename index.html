@@ -1,10 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/hedgie.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xamma's Page</title>
+
+    <title>Max Bickel — Cloud Solution Architect &amp; DevOps Engineer</title>
+    <meta
+      name="description"
+      content="Max Bickel — Cloud Solution Architect and DevOps engineer. Kubernetes platforms, GitOps, Go controllers and cloud-native services on AWS, Azure and GCP."
+    />
+    <meta name="author" content="Max Bickel" />
+    <!-- Kept media-free: useTheme rewrites it whenever the theme changes. -->
+    <meta name="theme-color" content="#08090c" />
+    <link rel="canonical" href="https://www.xammaops.win/" />
+
+    <link rel="icon" type="image/svg+xml" href="/hedgie.svg" />
+    <link rel="apple-touch-icon" href="/hedgie.svg" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="xammaops.win" />
+    <meta property="og:url" content="https://www.xammaops.win/" />
+    <meta property="og:title" content="Max Bickel — Cloud Solution Architect &amp; DevOps Engineer" />
+    <meta
+      property="og:description"
+      content="Kubernetes platforms, GitOps, Go controllers and cloud-native services on AWS, Azure and GCP."
+    />
+    <!--
+      No og:image yet. Drop a 1200x630 PNG at public/og.png, then add:
+        <meta property="og:image" content="https://www.xammaops.win/og.png" />
+        <meta name="twitter:image" content="https://www.xammaops.win/og.png" />
+      and switch twitter:card to "summary_large_image". Pointing at a missing
+      file is worse than omitting it — scrapers cache the 404.
+    -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Max Bickel — Cloud Solution Architect &amp; DevOps Engineer" />
+    <meta
+      name="twitter:description"
+      content="Kubernetes platforms, GitOps, Go controllers and cloud-native services on AWS, Azure and GCP."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Resolve the theme before first paint so a light-mode visitor never sees a
+      dark flash (and vice versa). Kept inline and dependency-free on purpose.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          var dark = stored ? stored === 'dark' : !prefersLight;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {
+          /* localStorage blocked — keep the dark default from the class above. */
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Max Bickel",
+        "url": "https://www.xammaops.win/",
+        "jobTitle": "Cloud Solution Architect",
+        "worksFor": { "@type": "Organization", "name": "Bechtle Clouds GmbH" },
+        "sameAs": [
+          "https://github.com/xamma",
+          "https://linkedin.com/in/maxbickel"
+        ],
+        "knowsAbout": [
+          "Kubernetes",
+          "GitOps",
+          "Cloud Architecture",
+          "Platform Engineering",
+          "Terraform",
+          "Go"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
