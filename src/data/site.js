@@ -18,7 +18,7 @@ const site = {
   ],
   tagline:
     'I design and run cloud-native platforms — Kubernetes at the core, GitOps end to end, and the controllers and services that hold it together.',
-  availability: 'Building managed platforms at Bechtle Clouds',
+  availability: 'Building cloudnative solutions at Bechtle Clouds',
   email: 'max@xammaops.win',
   social: {
     github: 'https://github.com/xamma',
