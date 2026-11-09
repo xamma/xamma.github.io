@@ -8,6 +8,7 @@ import ckad from '../assets/ckad.png';
 import ghactions from '../assets/github-actions.png';
 import itil4 from '../assets/itil4.png';
 import finops from '../assets/finops-certified-engineer.png';
+import ghcopilot from '../assets/github-copilot.png'
 
 /**
  * Named badges — the alt text and the caption are the point. A wall of logos
@@ -59,6 +60,12 @@ const certifications = [
   {
     image: ghactions,
     name: 'GitHub Actions',
+    issuer: 'GitHub',
+    level: 'Certified',
+  },
+  {
+    image: ghcopilot,
+    name: 'GitHub Copilot',
     issuer: 'GitHub',
     level: 'Certified',
   },
