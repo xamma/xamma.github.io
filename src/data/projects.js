@@ -22,6 +22,14 @@ const projects = [
     tags: ['Platform Engineering', 'Controllers', 'GitOps', 'Scale'],
   },
   {
+    name: 'AI integration gateway',
+    category: 'Platform',
+    featured: true,
+    description:
+      'Building and designing an integration gateway to connect external agents, systems and workflows to our services. Enabling reusable AI integrations.',
+    tags: ['Platform Engineering', 'AI', 'Cloud', 'Scale'],
+  },
+  {
     name: 'CSP Automation',
     category: 'Platform',
     description:

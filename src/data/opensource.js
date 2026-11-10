@@ -11,6 +11,13 @@ const opensource = [
     link: 'https://github.com/xamma/presetter',
   },
   {
+    name: 'Pit',
+    kind: 'cli',
+    description: 'Postgres initialization tool for automated environments',
+    tags: ['CLI', 'CI/CD', 'GitOps'],
+    link: 'https://github.com/xamma/pit',
+  },
+  {
     name: 'Helm Release Action',
     kind: 'action',
     description: 'GitHub Action for creating a Helm release in your helm-charts repo.',
